@@ -25,3 +25,12 @@ def criar_produto(nome: str, quantidade: int):
 def listar_produtos():
     return produtos
 
+@app.post("/entrada/{id}")
+def entrada_estoque(id: int, quantidade: int):
+    if quantidade < 0:
+        return {"erro": "Quantidade não pode ser negativa"}
+    for produto in produtos:
+        if produto["id"] == id:
+            produto["quantidade"] += quantidade
+            return produto
+    return {"erro": "Produto não encontrado"}
