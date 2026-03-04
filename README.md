@@ -5,3 +5,6 @@
 # Nome: Breno
 # Função: Desenvolvedor Front-end
 # Expectativa: Que de tudo certo, no final do trabalho
+# Nome: Richard
+# Função: Desenvolvedor Back-end
+# Expectativa: legal 👍
